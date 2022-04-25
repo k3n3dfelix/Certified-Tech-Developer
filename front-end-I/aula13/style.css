@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    outline:0;
+
+}
+
+@keyframes movimento{
+    0%{
+        opacity:0%
+    }
+    50%{
+        transform:translateX(300px);opacity:100%;
+    }
+    100%{
+        opacity:0%;
+    }
+}
+.ball{
+    margin-left:50px;
+    background-color: cadetblue;
+    width:100px;
+    height:100px;
+    border-radius: 100%;
+    animation: movimento 5s infinite;
+}
+
+i:hover{
+    transform: rotate(90deg);
+    transition: 0.5s;
+}
+
+button{
+    display: block;
+    width: 50px;
+    height:50px;
+    background-color: cadetblue;
+
+}
+
+button:hover{
+    transition: 1s;
+    background-color: blue;
+
+}
+

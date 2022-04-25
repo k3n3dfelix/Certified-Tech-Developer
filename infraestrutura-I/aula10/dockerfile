@@ -1,0 +1,6 @@
+#qual imagem vai ser usada, puxada do dockerHub
+#FROM é a mesma coisa que docker  pull
+FROM nginx:latest
+
+##está sendo 
+COPY /site/usr/share/nginx/html

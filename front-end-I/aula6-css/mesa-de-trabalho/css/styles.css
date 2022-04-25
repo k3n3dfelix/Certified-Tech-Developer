@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); 
+
+body{
+    background-color:#131313;
+}
+
+body h1{
+    color:white;
+    font-family: "Roboto", Times, serif;
+}
+
+.media-picture{
+    background-image: url("https://i1.wp.com/popnow.com.br/wp-content/uploads/2021/01/image-asset-8.jpeg?w=1480&ssl=1");
+    width:100%;
+    height:400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.review-score{
+    color:white;
+    background-color: #e6bd09;
+    padding:12px;
+}
+
+h2{
+    color:steelblue;
+}
+
+p{
+    color:#bdbdbd;
+    font-family: "Roboto", Times, serif;
+}
+
+a{
+    color:yellow;
+}

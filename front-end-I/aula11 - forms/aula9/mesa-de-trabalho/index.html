@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Trabalho Aula 9 - Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <img src="./img/candy.jpg"/>
+        <form method="#">
+            <div class="form">
+                <h1>Efetuar Pedido</h1>
+                <label for="username">Nome Completo</label>
+                <input type="text"  name="username" id="username">
+
+                <label for="email">E-mail para Contato</label>
+                <input type="email"  name="email" id="email">
+                
+                <label for="telefone">Telefone</label>
+                <input type="text"  name="telefone" id="telefone">
+
+                <label for="typeProject">Tipo de Pedido</label>
+                <select name="typeProject" id="typeProject">
+                    <option selected disabled value="#">Selecione um tipo</option>
+                    <option value="#">Bolo Festa</option>
+                    <option value="#">Brigadeiro</option>
+                    <option value="#">Doce Leite Ninho</option>
+                </select>
+                
+                <label for="qtd">Quantidade UND/KG</label>
+                <input type="number" name="qtd" id="qtd">
+
+                <div class="sabores">
+                    <h1>Sabores</h1>
+                    <input type="checkbox" name='options' id="firstOption" value="1">
+                    <label for="firstOption">Chcolate</label>
+                    <input type="checkbox" name='options' id="firstOption" value="1">
+                    <label for="secondOption">Morango</label>
+                    <input type="checkbox" name='options' id="firstOption" value="1">
+                    <label for="firstOption">Leite Ninho</label>
+                </div>
+                <label for="observations">Observações</label>
+                <textarea name ="observations" id="observations" rows="20" cols="50"></textarea>
+
+                
+                <button class="btnLimpar" type="reset">Limpar Formulário</button>
+                <button class="btnEnviar" type="submit">Enviar Pedido</button>
+        </div>
+        </form>
+    </main>
+</body>
+</html>

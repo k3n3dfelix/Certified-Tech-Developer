@@ -1,0 +1,42 @@
+.title{
+    color:#ff4d4d;
+}
+.body{
+    background-color:#cceeff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.body h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+.body h2{
+   font-size: 20px;
+}
+
+.job-title{
+    color:#999999;
+   background-color:#1a53ff;
+   font-size: 20px; 
+   font-weight: bold;
+   padding: 5px 10px 5px 10px;
+}
+#high{
+    color:#ff4d4d;
+}
+.contact{
+    font-weight: bold;
+}
+.footer{
+    background-color:#cccccc;
+}
+
+.footer li{
+    color:  #ffffff;
+}
+
+.footer a{
+    color: #0d0d0d;
+}
+ul{
+    padding: 10px;
+}

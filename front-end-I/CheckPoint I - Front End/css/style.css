@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Road+Rage&family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+     padding-left: 20px;
+     padding-right: 20px;
+     font-size: 25px;
+     font-family: 'Prata', serif;
+     font-weight: bold;
+     font-size: 30px;
+     color: rgb(63, 63, 63);
+}
+body {
+    background-image: url("./img/PonteHercilioLuz.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black; 
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+}
+h1 {
+    font-family: 'Zen Kurenaido', sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+}
+main {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.089);
+}
+p {
+    font-family: 'Prata', serif;
+    font-size: 20px;
+    text-indent: 20px;
+    text-align: justify;
+    color: rgb(36, 36, 36);
+    position: relative;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 40px;
+}
+div {
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+iframe {
+    height: 515px;
+    width: 760px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.curiosidade {
+    width: 100%;
+    height: 40%;
+    position: relative;
+}   
+h2 {
+    text-align: center;
+    color: white;
+}
+ol {
+    text-align: center;
+    color: rgb(214, 214, 214);
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+.youtube {
+  display: inline;
+  margin-left: 90%;
+  padding-top: 10px;
+}
+.instagram {
+    display: inline;
+    padding-left: 20px;
+}
+img {
+    border-radius: 10px;
+}
+
+/* ------------------------------------------------------------- */
+form {
+    padding: 20px;
+    color: rgb(19, 19, 19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input,textarea, select{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:10px;
+    border-radius:5px;
+    font-family: roboto;
+    font-weight: bold;
+}
+.checkbox {
+    display: flex;
+    gap: 15px;
+    color: beige;
+}
+
+fieldset {
+    border: none;
+    font-family: roboto; 
+    color: rgb(2, 2, 2);
+}
+
+legend {
+    padding-bottom: 10px;
+}
+input, select {
+	background-color: rgb(221, 203, 203);
+	border: none;
+	padding: 6px 24px;
+	border-radius: 12px;
+	font-weight: bold;
+	outline: 0;
+ 
+}
+select {
+    margin-bottom: 20px;
+}
+.enviar{
+    color: rgb(15, 6, 6);
+    background-color:#34eb3a;
+    border: none;
+    padding: 6px 24px;
+    border-radius: 12px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+.enviar:hover {
+    background-color: #19801d;
+   
+}
+.limpar{
+    color: rgb(15, 6, 6);
+    background-color:#db4f4f;
+    border: none;
+    padding: 6px 24px;
+    border-radius: 12px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+.limpar:hover {
+    background-color: #9c0e0e;
+    
+}
+legend {
+    color: beige;
+}
+input[type="text"]:hover{
+    border: 1px solid #999;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+input[type="email"]:hover{
+    border: 1px solid #999;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+input[type="date"]:hover{
+    border: 1px solid #999;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+.tituloForm {
+     color: black;
+}
+input[type="date"] {
+    width: 200px;
+}
+option {
+    font-size: 14px;
+}
+legend {
+    color: black ;
+}

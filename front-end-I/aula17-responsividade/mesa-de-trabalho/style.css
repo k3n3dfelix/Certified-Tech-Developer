@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    outline:0;
+}
+
+body{
+    display:grid;
+    grid-template-columns: 200px 1fr ; /* ou auto que ele já faz automatico*/
+    grid-template-areas: 
+    'main-header main-header'
+    'main-aside main-content'
+    'main-footer main-footer'
+    ;
+}
+
+header {
+    background-color:#133c94;
+    grid-area:main-header;
+    height:70px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+
+}
+
+header img{
+    width:300px;
+    height:70px;
+    margin: 0 auto;
+}
+
+aside{
+    background-color: #525d75;
+    grid-area:main-aside;
+    height:737px;
+    font-size:40px;
+    color:white;
+    text-align: center;
+}
+aside li{
+    padding: 20px;
+}
+
+main{
+    background-color: white;
+    grid-area:main-content;
+    text-align: center;
+}
+main h1{
+    text-align: center;
+    margin-bottom:20px;
+}
+
+main img{
+    display:flex;
+    justify-content: center;
+    width:500px;
+    height:300px;
+    margin: 0 auto;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+footer{
+    background-color: #133c94;
+    grid-area:main-footer;
+    height:50px;
+    color:white;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Aplicando Responsividade no Site*/
+@media(max-width:1024px){
+    body{
+       
+        grid-template-columns: 100% ; /* ou auto que ele já faz automatico*/
+        grid-template-areas: 
+        'main-header '
+        'main-aside '
+        'main-content '
+        'main-footer '
+        ;
+    }
+
+    aside{
+        background-color: #525d75;
+        grid-area:main-aside;
+        height:230px;
+        font-size:40px;
+        color:white;
+        text-align: center;
+    }
+    aside li{
+        padding: 10px;
+    }
+
+    main p{
+       
+        text-align: left;
+        padding:10px;
+    }
+
+    
+}
+@media(max-width:768px){
+    body{
+       
+        grid-template-columns: 100% ; /* ou auto que ele já faz automatico*/
+        grid-template-areas: 
+        'main-header '
+        'main-aside '
+        'main-content '
+        'main-footer '
+        ;
+    }
+}
+
+@media(max-width:425px){
+    body{
+        grid-template-columns: 100% ; /* ou auto que ele já faz automatico*/
+        grid-template-areas: 
+        'main-header '
+        'main-aside '
+        'main-content '
+        'main-footer '
+        ;
+    }
+
+    main img{
+        display:flex;
+        justify-content: center;
+        width:320px;
+        height:120px;
+        margin: 0 auto;
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+
+    main h1{
+        text-align: center;
+        margin-bottom:20px;
+        font-size:20px;
+    }
+    main p{
+        font-size:15px;
+        text-align: left;
+        padding:10px;
+    }
+
+    header {
+        background-color:#133c94;
+        grid-area:main-header;
+        height:50px;
+        width:100%;
+        display:flex;
+        justify-content: center;
+    
+    }
+    
+    header img{
+        width:200px;
+        height:50px;
+        margin: 0 auto;
+    }
+    
+    aside{
+        background-color: #525d75;
+        grid-area:main-aside;
+        height:160px;
+        font-size:30px;
+        color:white;
+        text-align: center;
+    }
+    aside li{
+        padding: 5px;
+    }
+
+}
+
+@media(max-width:320px){
+    body{
+        grid-template-columns: 100% ; /* ou auto que ele já faz automatico*/
+        grid-template-areas: 
+        'main-header '
+        'main-aside '
+        'main-content '
+        'main-footer '
+        ;
+    }
+
+    main img{
+        display:flex;
+        justify-content: center;
+        width:280px;
+        height:100px;
+        margin: 0 auto;
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+
+    main h1{
+        text-align: center;
+        margin-bottom:20px;
+        font-size:20px;
+    }
+    main p{
+        font-size:10px;
+        text-align: left;
+        padding:5px;
+    }
+
+    header {
+        background-color:#133c94;
+        grid-area:main-header;
+        height:50px;
+        width:100%;
+        display:flex;
+        justify-content: center;
+    
+    }
+    
+    header img{
+        width:150px;
+        height:50px;
+        margin: 0 auto;
+    }
+    
+    aside{
+        background-color: #525d75;
+        grid-area:main-aside;
+        height:120px;
+        font-size:20px;
+        color:white;
+        text-align: center;
+    }
+    aside li{
+        padding: 5px;
+    }
+
+    footer{
+        background-color: #133c94;
+        grid-area:main-footer;
+        height:20px;
+        color:white;
+        font-weight: 500;
+        text-align: center;
+        font-size:10px;
+    }
+
+}

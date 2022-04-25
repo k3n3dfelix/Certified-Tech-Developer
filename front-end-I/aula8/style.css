@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+  
+    background-color:green;
+    padding: 12px 32px;
+}
+.square{
+    width:400px;
+    height:400px;
+    margin-bottom: 12px;
+}.first-square{
+    background-color:gold;
+    position:relative;
+    left:50px;
+}
+
+.second-square{
+    background-color:brown;
+    position:absolute;
+    left:100px;
+}
+.third-square{
+    background-color:blue;
+    position:relative;
+    left:50px;
+}

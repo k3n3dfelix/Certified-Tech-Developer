@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    outline:0;
+
+}
+body{
+    padding: 32px;
+}
+.main-menu li{
+    width:fit-content;
+    background-color:brown;
+    color:white;
+    padding:12px;
+    border-radius:12px;
+    margin-bottom: 10px;;
+
+}
+
+.main-menu li:nth-child(odd){ /*even 2n+4 */
+   
+    background-color:salmon;
+    
+
+}
+
+label{
+    font-size: 16px;;
+}
+
+.person-input{
+    background-color: gray;
+    border:none;
+    padding: 6px 12px;
+    border-radius: 12px;
+    margin-left: 12px;
+    transition: .4s;
+}
+
+
+.person-input:hover{
+    margin-left:24px;
+}
+
+.person-input:focus{
+    background-color: red;
+}
+
+.person-checkbox{
+    width:25px;
+    height: 25px;
+    transition: .4s;
+}
+
+.person-checkbox:checked{
+    width:50px;
+    height: 50px;
+}
+
+.main-button{
+    color:white;
+    border:none;
+    padding:12px 24px;
+    background-color: #32cc72;
+    border-radius: 12px;
+    transition: .4s;
+}
+
+.main-button:hover{
+    background-color: black;
+}
+
+p{
+    margin-top:12px;
+}
+
+p::before{
+    content:'👀';
+}
+
+p::first-line{
+    background-color: yellow;
+}
+
+p::first-letter{
+   font-size:32px;
+}

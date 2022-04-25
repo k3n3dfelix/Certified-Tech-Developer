@@ -1,0 +1,18 @@
+{
+    "name": "pdfgenerator", //nome da aplicação
+    "version": "1.0.0", //versão
+    "description": "", //descrição
+    "main": "app.js", //arquivo principal
+    "type":"module", //padrão de importação dos modulos -> CommonJS ou ES6 (ECMAScript2015)
+    "dependencies": { //pacotes que a aplicação irá utilizar e a versão do pacote
+      "html-pdf": "^2.2.0"
+    },
+    "devDependencies": {}, //pacotes que são utilizadas somente
+                                                  //no ambiente de desenvolvimento
+    
+  "scripts": {          //scripts para automatizar comandos
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "", //Autor
+    "license": "ISC" //tipo de licença
+  }

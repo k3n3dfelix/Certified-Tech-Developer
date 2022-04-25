@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    outline:0;
+
+}
+body{
+    display: grid;
+    grid-template-columns: 65% 1fr ; /* ou auto que ele já faz automatico*/
+    grid-template-areas: 
+    'main-header main-header'
+    'main-content main-aside'
+    'main-footer main-footer'
+    ;
+}
+
+/*MAIN---------------------------------------------------------------------------------------*/
+header{
+    background-color: red;
+    height:50px;
+    width:97%;
+    grid-area:main-header;
+    margin: 20px 20px 20px 30px;
+}
+/*MAIN---------------------------------------------------------------------------------------*/
+main{
+    grid-area:main-content;
+    margin-left: 5%;
+}
+main img{
+    width:90%;
+    height: 82%; 
+}
+main h1{
+    color:darkgrey
+}
+main h2{
+    color:darkgray;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+/*SECTION---------------------------------------------------------------------------------------*/
+
+section{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+section img{
+    display:flex;
+    width:400px;
+    height:200px;
+    object-fit:cover;
+    object-position:bottom;
+   
+}
+section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+section div h1{
+    color:dimgray;
+    font-size: 30px;
+}
+section div h2{
+    color:darkgray;
+    font-size:20px;
+}
+section div h3{
+    color:darkgray;
+    font-size:15px;
+}
+section div p{
+    color:darkgray;
+    font-size:10px;
+}
+
+/*FOOTER---------------------------------------------------------------------------------------*/
+footer{
+    grid-area:main-footer;
+    background-color: red;
+    height:50px;
+    width:97%;
+    margin: 20px 20px 20px 30px;
+    text-align: center;
+}

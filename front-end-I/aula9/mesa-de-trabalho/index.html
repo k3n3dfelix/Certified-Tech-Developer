@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Trabalho Aula 9 - Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <img src="./img/ks-solutions.png"/>
+        <form method="#">
+            <div class="form">
+                <h1>Cadastro Para Orçamentos</h1>
+                <label for="username">Nome Completo</label>
+                <input type="text"  name="username" id="username">
+
+                <label for="email">E-mail para Contato</label>
+                <input type="email"  name="email" id="email">
+
+                <label for="typeProject">Tipo de Projeto</label>
+                <select name="typeProject" id="typeProject">
+                    <option selected disabled value="#">Selecione um tipo</option>
+                    <option value="#">Site Institucional</option>
+                    <option value="#">Sistema Web</option>
+                    <option value="#">E-Commerce</option>
+                    <option value="#">Aplicativo</option>
+                </select>
+                
+                <label for="observations">Descrição do projeto</label>
+                <textarea name ="observations" id="observations" rows="20" cols="50"></textarea>
+
+                
+                <button class="btnLimpar" type="reset">Limpar Formulário</button>
+                <button class="btnEnviar" type="submit">Enviar Formulário</button>
+        </div>
+        </form>
+    </main>
+</body>
+</html>

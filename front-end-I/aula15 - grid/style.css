@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    outline:0;
+
+}
+
+body{
+    display:grid;
+    grid-template-columns: 200px 1fr ; /* ou auto que ele já faz automatico*/
+    grid-template-areas: 
+    'main-header main-header'
+    'main-aside main-content'
+    'main-footer main-footer'
+    ;
+}
+
+header {
+    background-color: brown;
+    grid-area:main-header;
+    height:100px;
+}
+
+aside{
+    background-color: cyan;
+    grid-area:main-aside;
+    height:737px;
+}
+main{
+    background-color: salmon;
+    grid-area:main-content;
+}
+
+footer{
+    background-color: lightslategray;
+    grid-area:main-footer;
+    height:100px;
+}

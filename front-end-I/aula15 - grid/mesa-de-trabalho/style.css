@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
+    outline:0;
+}
+
+body{
+    display:grid;
+    grid-template-columns: 200px 1fr ; /* ou auto que ele já faz automatico*/
+    grid-template-areas: 
+    'main-header main-header'
+    'main-aside main-content'
+    'main-footer main-footer'
+    ;
+}
+
+header {
+    background-color:#133c94;
+    grid-area:main-header;
+    height:70px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+
+}
+
+header img{
+    width:300px;
+    height:70px;
+    margin: 0 auto;
+}
+
+aside{
+    background-color: #525d75;
+    grid-area:main-aside;
+    height:737px;
+    font-size:40px;
+    color:white;
+    text-align: center;
+}
+aside li{
+    padding: 20px;
+}
+
+main{
+    background-color: white;
+    grid-area:main-content;
+}
+main h1{
+    text-align: center;
+}
+
+main img{
+    display:flex;
+    justify-content: center;
+    width:500px;
+    height:300px;
+    margin: 0 auto;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+footer{
+    background-color: #133c94;
+    grid-area:main-footer;
+    height:50px;
+    color:white;
+    font-weight: 500;
+    text-align: center;
+}

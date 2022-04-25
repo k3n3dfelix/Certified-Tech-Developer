@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 9 - Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form method="GET">
+            <h1>Cadastro de usuário</h1>
+            <label for="username">Nome de usuário</label>
+            <input type="text"  name="username" id="username">
+
+            <label for="email">E-mail</label>
+            <input type="email"  name="email" id="email">
+            
+            <label for="email">Senha</label>
+            <input type='password' name="password" id="password">
+
+            <label for="observations">Observações</label>
+            <textarea name ="observations" id="observations"></textarea>
+            
+            <div>
+                <input type="radio" name="person" id="pf" value="pessoaFisica">
+                <label for="pf">PEssoa Física</label>
+            </div>
+            <div>
+                <input type="radio" name="person" id="pj" value="pessoaJuridica">
+                <label for="pj">PEssoa Física</label>
+            </div>
+
+            <div>
+                <h1>Complementos</h1>
+                <input type="checkbox" name='options' id="firstOption" value="1">
+                <label for="firstOption">Opção 1</label>
+                <input type="checkbox" name='options' id="firstOption" value="1">
+                <label for="secondOption">Opção 2</label>
+                <input type="checkbox" name='options' id="firstOption" value="1">
+                <label for="firstOption">Opção 3</label>
+            </div>
+            
+            </form>
+
+            <button type="reset">Limpar Formulário</button>
+            <button type="submit">Enviar Formulário</button>
+        </form>
+    </main>
+</body>
+</html>
