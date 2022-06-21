@@ -1,0 +1,14 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "calculadora simples",
+  "main": "calc.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "Kened Felix",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.1"
+  }
+}

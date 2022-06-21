@@ -1,0 +1,14 @@
+Criar o package.json
+npm init
+
+instalar o Jest
+npm install --save-dev jest
+
+testar as suites de testes
+npm test ou npm jest
+
+gerar tabela para visualização de como estão os testes(adicionar no package.json - "test": "jest --collect-coverage")
+--collect-coverage
+
+Roda os testes automatico e vai verificando em tempo real as quebras
+--watchAll
