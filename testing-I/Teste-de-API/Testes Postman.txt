@@ -1,0 +1,64 @@
+Teste API I
+https://jsonplaceholder.typicode.com/users
+teste GET
+
+pm.test("O código do Status é 200", function () {
+    pm.response.to.have.status(201);
+});
+
+pm.test("O tempo de resposta é menor que 200ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(100);
+});
+
+pm.test("O corpo da requisição inclui o texto 'Patricia'", function () {
+    pm.expect(pm.response.text()).to.include("Patricias");
+});
+
+Teste Post
+
+pm.test("O código do Status é 200", function () {
+    pm.response.to.have.status(201);
+});
+
+pm.test("O tempo de resposta é menor que 200ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(500);
+});
+
+pm.test("O corpo da requisição inclui o texto 'Kened Silva'", function () {
+    pm.expect(pm.response.text()).to.include("Kened Silva");
+});
+
+TESTES API II
+
+https://dsternlicht.github.io/RESTool/
+https://restool-sample-app.herokuapp.com/api/character
+
+GET
+
+pm.test("O código do status é 200", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("O tempo de resposta é menor que 500ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(850);
+});
+
+pm.test("O corpo da requisição inclui o texto 'Epaminondas'", function () {
+    pm.expect(pm.response.text()).to.include("Epaminondas");
+});
+
+
+POST
+pm.test("O código do status é 200", function () {
+    pm.response.to.have.status(200);
+});
+
+pm.test("O tempo de resposta é menor que 500ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(850);
+});
+
+pm.test("O corpo da requisição inclui o texto 'Hogwarts'", function () {
+    pm.expect(pm.response.text()).to.include("Hogwarts");
+});
+
+
