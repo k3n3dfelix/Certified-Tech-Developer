@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220712 14:29:21.147" rpa="false" schemaversion="3">
+<suite id="s1" name="DH" source="C:\Users\K3N3D\Desktop\WorkSpaceDesenvolvimento\Certified-Tech-Developer\testing-I\robot\teste professor\DH.robot">
+<test id="s1-t1" name="Validação das informações do curso de Data Analytics" line="8">
+<kw name="Abrir o novo site da Digital House Brasil" library="DH" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220712 14:29:21.782" level="INFO">Opening browser 'Chrome' to base url 'https://www.digitalhouse.com/br'.</msg>
+<status status="PASS" starttime="20220712 14:29:21.782" endtime="20220712 14:29:30.474"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220712 14:29:30.474" endtime="20220712 14:29:30.800"/>
+</kw>
+<status status="PASS" starttime="20220712 14:29:21.780" endtime="20220712 14:29:30.801"/>
+</kw>
+<kw name="Clicar em “Ver outros cursos”" library="DH">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,900)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220712 14:29:30.852" level="INFO">Executing JavaScript:
+window.scroll(0,900)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220712 14:29:30.842" endtime="20220712 14:29:31.119"/>
+</kw>
+<kw name="Wait and Click" library="DH">
+<arg>${OUTROS_CURSOS}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220712 14:29:31.121" endtime="20220712 14:29:31.263"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220712 14:29:31.264" level="INFO">Clicking element 'css=#__next &gt; div &gt; main &gt; section &gt; div &gt; div.mt-8.flex.justify-center &gt; div &gt; a'.</msg>
+<msg timestamp="20220712 14:29:32.821" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220712 14:29:32.822" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/br/produtos" class="dh-button-sm bg-black hover:bg-black border border-white"&gt;...&lt;/a&gt; is not clickable at point (674, 573). Other element would receive the click: &lt;iframe style="width: 100%; height: 125px; z-index: 2147483647; border: 0px; position: fixed; left: 0px; bottom: 0px;"&gt;&lt;/iframe&gt;
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00936463+2188387]
+	Ordinal0 [0x008CE461+1762401]
+	Ordinal0 [0x007E3D78+802168]
+	Ordinal0 [0x00817F9B+1015707]
+	Ordinal0 [0x00815F68+1007464]
+	Ordinal0 [0x00813C6B+998507]
+	Ordinal0 [0x008129D9+993753]
+	Ordinal0 [0x00808613+951827]
+	Ordinal0 [0x0082C7DC+1099740]
+	Ordinal0 [0x00807FF4+950260]
+	Ordinal0 [0x0082C9F4+1100276]
+	Ordinal0 [0x0083CC22+1166370]
+	Ordinal0 [0x0082C5F6+1099254]
+	Ordinal0 [0x00806BE0+945120]
+	Ordinal0 [0x00807AD6+948950]
+	GetHandleVerifier [0x00BD71F2+2712546]
+	GetHandleVerifier [0x00BC886D+2652765]
+	GetHandleVerifier [0x009C002A+520730]
+	GetHandleVerifier [0x009BEE06+516086]
+	Ordinal0 [0x008D468B+1787531]
+	Ordinal0 [0x008D8E88+1805960]
+	Ordinal0 [0x008D8F75+1806197]
+	Ordinal0 [0x008E1DF1+1842673]
+	BaseThreadInitThunk [0x76C9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77017A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77017A6E+238]
+</msg>
+<status status="FAIL" starttime="20220712 14:29:31.264" endtime="20220712 14:29:32.826"/>
+</kw>
+<status status="FAIL" starttime="20220712 14:29:31.119" endtime="20220712 14:29:32.828"/>
+</kw>
+<status status="FAIL" starttime="20220712 14:29:30.841" endtime="20220712 14:29:32.829"/>
+</kw>
+<kw name="Selecionar o curso “Data Analytics”" library="DH">
+<status status="NOT RUN" starttime="20220712 14:29:32.830" endtime="20220712 14:29:32.830"/>
+</kw>
+<kw name="Verificar se o texto de chamada do curso está correto" library="DH">
+<status status="NOT RUN" starttime="20220712 14:29:32.831" endtime="20220712 14:29:32.831"/>
+</kw>
+<kw name="Verificar se a descrição do curso está correta" library="DH">
+<status status="NOT RUN" starttime="20220712 14:29:32.831" endtime="20220712 14:29:32.831"/>
+</kw>
+<kw name="Clicar em “Inscreva-se agora&quot;" library="DH">
+<status status="NOT RUN" starttime="20220712 14:29:32.832" endtime="20220712 14:29:32.832"/>
+</kw>
+<kw name="Clicar em “Inscreva-se”" library="DH">
+<status status="NOT RUN" starttime="20220712 14:29:32.833" endtime="20220712 14:29:32.833"/>
+</kw>
+<kw name="Validar que o valor do curso é “R$10.315”" library="DH">
+<status status="NOT RUN" starttime="20220712 14:29:32.833" endtime="20220712 14:29:32.833"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220712 14:29:32.835" endtime="20220712 14:29:35.541"/>
+</kw>
+<status status="FAIL" starttime="20220712 14:29:21.778" endtime="20220712 14:29:35.546">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/br/produtos" class="dh-button-sm bg-black hover:bg-black border border-white"&gt;...&lt;/a&gt; is not clickable at point (674, 573). Other element would receive the click: &lt;iframe style="width: 100%; height: 125px; z-index: 2147483647; border: 0px; position: fixed; left: 0px; bottom: 0px;"&gt;&lt;/iframe&gt;
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00936463+2188387]
+	Ordinal0 [0x008CE461+1762401]
+	Ordinal0 [0x007E3D78+802168]
+	Ordinal0 [0x00817F9B+1015707]
+	Ordinal0 [0x00815F68+1007464]
+	Ordinal0 [0x00813C6B+998507]
+	Ordinal0 [0x008129D9+993753]
+	Ordinal0 [0x00808613+951827]
+	Ordinal0 [0x0082C7DC+1099740]
+	Ordinal0 [0x00807FF4+950260]
+	Ordinal0 [0x0082C9F4+1100276]
+	Ordinal0 [0x0083CC22+1166370]
+	Ordinal0 [0x0082C5F6+1099254]
+	Ordinal0 [0x00806BE0+945120]
+	Ordinal0 [0x00807AD6+948950]
+	GetHandleVerifier [0x00BD71F2+2712546]
+	GetHandleVerifier [0x00BC886D+2652765]
+	GetHandleVerifier [0x009C002A+520730]
+	GetHandleVerifier [0x009BEE06+516086]
+	Ordinal0 [0x008D468B+1787531]
+	Ordinal0 [0x008D8E88+1805960]
+	Ordinal0 [0x008D8F75+1806197]
+	Ordinal0 [0x008E1DF1+1842673]
+	BaseThreadInitThunk [0x76C9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77017A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77017A6E+238]
+</status>
+</test>
+<test id="s1-t2" name="Validação das informações do curso de Data Science" line="18">
+<kw name="Abrir o novo site da Digital House Brasil" library="DH" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220712 14:29:35.575" level="INFO">Opening browser 'Chrome' to base url 'https://www.digitalhouse.com/br'.</msg>
+<status status="PASS" starttime="20220712 14:29:35.573" endtime="20220712 14:29:42.594"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220712 14:29:42.594" endtime="20220712 14:29:42.976"/>
+</kw>
+<status status="PASS" starttime="20220712 14:29:35.571" endtime="20220712 14:29:42.976"/>
+</kw>
+<kw name="Clicar em “Ver outros cursos”" library="DH">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,900)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220712 14:29:42.983" level="INFO">Executing JavaScript:
+window.scroll(0,900)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220712 14:29:42.980" endtime="20220712 14:29:43.171"/>
+</kw>
+<kw name="Wait and Click" library="DH">
+<arg>${OUTROS_CURSOS}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220712 14:29:43.173" endtime="20220712 14:29:43.245"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220712 14:29:43.246" level="INFO">Clicking element 'css=#__next &gt; div &gt; main &gt; section &gt; div &gt; div.mt-8.flex.justify-center &gt; div &gt; a'.</msg>
+<msg timestamp="20220712 14:29:44.939" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220712 14:29:44.940" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/br/produtos" class="dh-button-sm bg-black hover:bg-black border border-white"&gt;...&lt;/a&gt; is not clickable at point (674, 573). Other element would receive the click: &lt;iframe style="width: 100%; height: 125px; z-index: 2147483647; border: 0px; position: fixed; left: 0px; bottom: 0px;"&gt;&lt;/iframe&gt;
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00936463+2188387]
+	Ordinal0 [0x008CE461+1762401]
+	Ordinal0 [0x007E3D78+802168]
+	Ordinal0 [0x00817F9B+1015707]
+	Ordinal0 [0x00815F68+1007464]
+	Ordinal0 [0x00813C6B+998507]
+	Ordinal0 [0x008129D9+993753]
+	Ordinal0 [0x00808613+951827]
+	Ordinal0 [0x0082C7DC+1099740]
+	Ordinal0 [0x00807FF4+950260]
+	Ordinal0 [0x0082C9F4+1100276]
+	Ordinal0 [0x0083CC22+1166370]
+	Ordinal0 [0x0082C5F6+1099254]
+	Ordinal0 [0x00806BE0+945120]
+	Ordinal0 [0x00807AD6+948950]
+	GetHandleVerifier [0x00BD71F2+2712546]
+	GetHandleVerifier [0x00BC886D+2652765]
+	GetHandleVerifier [0x009C002A+520730]
+	GetHandleVerifier [0x009BEE06+516086]
+	Ordinal0 [0x008D468B+1787531]
+	Ordinal0 [0x008D8E88+1805960]
+	Ordinal0 [0x008D8F75+1806197]
+	Ordinal0 [0x008E1DF1+1842673]
+	BaseThreadInitThunk [0x76C9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77017A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77017A6E+238]
+</msg>
+<status status="FAIL" starttime="20220712 14:29:43.246" endtime="20220712 14:29:44.941"/>
+</kw>
+<status status="FAIL" starttime="20220712 14:29:43.172" endtime="20220712 14:29:44.942"/>
+</kw>
+<status status="FAIL" starttime="20220712 14:29:42.978" endtime="20220712 14:29:44.943"/>
+</kw>
+<kw name="Selecionar o curso “Data Science”" library="DH">
+<status status="NOT RUN" starttime="20220712 14:29:44.944" endtime="20220712 14:29:44.944"/>
+</kw>
+<kw name="Verificar se o texto de chamada do curso de Data Science está correto" library="DH">
+<status status="NOT RUN" starttime="20220712 14:29:44.945" endtime="20220712 14:29:44.945"/>
+</kw>
+<kw name="Verificar se a descrição do curso de Data Science está correta" library="DH">
+<status status="NOT RUN" starttime="20220712 14:29:44.946" endtime="20220712 14:29:44.946"/>
+</kw>
+<kw name="Clicar no botão &quot;Inscreva-se agora&quot;" library="DH">
+<status status="NOT RUN" starttime="20220712 14:29:44.946" endtime="20220712 14:29:44.946"/>
+</kw>
+<kw name="Clicar no botão &quot;Inscreva-se&quot;" library="DH">
+<status status="NOT RUN" starttime="20220712 14:29:44.947" endtime="20220712 14:29:44.947"/>
+</kw>
+<kw name="Validar que o valor do curso é “R$ 11.878”" library="DH">
+<status status="NOT RUN" starttime="20220712 14:29:44.947" endtime="20220712 14:29:44.947"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220712 14:29:44.948" endtime="20220712 14:29:47.561"/>
+</kw>
+<status status="FAIL" starttime="20220712 14:29:35.568" endtime="20220712 14:29:47.565">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/br/produtos" class="dh-button-sm bg-black hover:bg-black border border-white"&gt;...&lt;/a&gt; is not clickable at point (674, 573). Other element would receive the click: &lt;iframe style="width: 100%; height: 125px; z-index: 2147483647; border: 0px; position: fixed; left: 0px; bottom: 0px;"&gt;&lt;/iframe&gt;
+  (Session info: chrome=103.0.5060.114)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00936463+2188387]
+	Ordinal0 [0x008CE461+1762401]
+	Ordinal0 [0x007E3D78+802168]
+	Ordinal0 [0x00817F9B+1015707]
+	Ordinal0 [0x00815F68+1007464]
+	Ordinal0 [0x00813C6B+998507]
+	Ordinal0 [0x008129D9+993753]
+	Ordinal0 [0x00808613+951827]
+	Ordinal0 [0x0082C7DC+1099740]
+	Ordinal0 [0x00807FF4+950260]
+	Ordinal0 [0x0082C9F4+1100276]
+	Ordinal0 [0x0083CC22+1166370]
+	Ordinal0 [0x0082C5F6+1099254]
+	Ordinal0 [0x00806BE0+945120]
+	Ordinal0 [0x00807AD6+948950]
+	GetHandleVerifier [0x00BD71F2+2712546]
+	GetHandleVerifier [0x00BC886D+2652765]
+	GetHandleVerifier [0x009C002A+520730]
+	GetHandleVerifier [0x009BEE06+516086]
+	Ordinal0 [0x008D468B+1787531]
+	Ordinal0 [0x008D8E88+1805960]
+	Ordinal0 [0x008D8F75+1806197]
+	Ordinal0 [0x008E1DF1+1842673]
+	BaseThreadInitThunk [0x76C9FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77017A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77017A6E+238]
+</status>
+</test>
+<status status="FAIL" starttime="20220712 14:29:21.153" endtime="20220712 14:29:47.615"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="DH">DH</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
