@@ -3,9 +3,10 @@ public class Dentista {
     private String sobrenome;
     private static Long matricula;
 
-    public Dentista(String nome, String sobrenome) {
+    public Dentista(String nome, String sobrenome, Long matricula) {
         this.nome = nome;
         this.sobrenome = sobrenome;
+        this.matricula = matricula
     }
 
     public String getNome() {
@@ -22,6 +23,14 @@ public class Dentista {
 
     public void setSobrenome(String sobrenome) {
         this.sobrenome = sobrenome;
+    }
+
+    public static Long getMatricula() {
+        return matricula;
+    }
+
+    public static void setMatricula(Long matricula) {
+        Dentista.matricula = matricula;
     }
 
     public Long setMatriculaTest(){
