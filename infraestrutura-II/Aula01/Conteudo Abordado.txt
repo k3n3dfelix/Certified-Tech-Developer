@@ -1,0 +1,1 @@
+1) DevOps2) IaC - CloudFormation (CF) - Ansible  - TerraForm (TF)3) Pipeline - Gitlab - Pipeline:  - CI  - CD4) Monitoria - CloudWatch
