@@ -10,7 +10,6 @@ import { MesaComponent04 } from './components/aula04/MesaComponent04';
 //Aula 05
 import { AppComponent04 } from './components/aula04/AppComponent04'
 import { AppComponent07 } from './components/Aula07';
-import { ListaProdutos } from './components/Aula07/mesa07/index';
 
 function App() {
 
@@ -24,9 +23,7 @@ function App() {
       {/* <AppComponent05></AppComponent05> */}
 
       {/* //Aula 07 - Hooks */}
-      {/* <AppComponent07></AppComponent07> */}
-       {/* //Mesa 07 - Hooks */}
-      <ListaProdutos></ListaProdutos>
+      <AppComponent07></AppComponent07>
 
 
     </>
