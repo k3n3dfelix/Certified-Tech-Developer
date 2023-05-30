@@ -1,0 +1,16 @@
+.img{
+    width: 50%;
+    border-radius: 40%;
+}
+
+.div {
+    width:50%;
+    background-color: rgb(135,163,216);
+    border-radius: 10%;
+}
+
+.title{
+    font-size: 25pt;
+    color: whitesmoke;
+    
+}
