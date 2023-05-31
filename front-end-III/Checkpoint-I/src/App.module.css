@@ -1,0 +1,9 @@
+.Container{
+    width: 100%;
+    background-color: #dee0df;
+}
+
+.SpanError {
+    background-color: red;
+    color: #d9072a;
+}
